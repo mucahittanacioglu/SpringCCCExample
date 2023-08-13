@@ -1,0 +1,798 @@
+2023-08-13 18:39:46 [main] INFO  com.example.springtest.SpringTestApplication - Starting SpringTestApplication using Java 17.0.8 with PID 13804 (C:\Users\Co\IdeaProjects\SpringCCC\target\classes started by Co in C:\Users\Co\IdeaProjects\SpringCCC)
+2023-08-13 18:39:46 [main] INFO  com.example.springtest.SpringTestApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-13 18:39:46 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-13 18:39:46 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-13 18:39:47 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 78 ms. Found 2 JPA repository interfaces.
+2023-08-13 18:39:47 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-13 18:39:47 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-13 18:39:47 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.springtest.core.IUserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-08-13 18:39:47 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.springtest.dataaccess.ICityCrudRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-08-13 18:39:47 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2023-08-13 18:39:47 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-08-13 18:39:47 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-13 18:39:47 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-13 18:39:47 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-13 18:39:47 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-13 18:39:47 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 844 ms
+2023-08-13 18:39:47 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-13 18:39:47 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-13 18:39:47 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2023-08-13 18:39:47 [main] INFO  org.hibernate.bytecode.internal.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-08-13 18:39:47 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-13 18:39:47 [main] INFO  org.hibernate.bytecode.internal.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-08-13 18:39:48 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-13 18:39:48 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-13 18:39:48 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-13 18:39:48 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6d71f296, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4a15d5f5, org.springframework.security.web.context.SecurityContextHolderFilter@7c35d7d, org.springframework.security.web.header.HeaderWriterFilter@455cb6d9, org.springframework.security.web.authentication.logout.LogoutFilter@64f1b2fb, com.example.springtest.core.security.jwt.JwtAuthenticationFilter@2446be5f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d0538b3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@401b7226, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5319efc0, org.springframework.security.web.session.SessionManagementFilter@6f6998b6, org.springframework.security.web.access.ExceptionTranslationFilter@6e68ccc9, org.springframework.security.web.access.intercept.AuthorizationFilter@20e73e41]
+2023-08-13 18:39:48 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-13 18:39:49 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-13 18:39:49 [main] INFO  com.example.springtest.SpringTestApplication - Started SpringTestApplication in 2.539 seconds (process running for 2.951)
+2023-08-13 18:40:03 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-13 18:40:03 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-13 18:40:03 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-08-13 18:40:03 [http-nio-8080-exec-1] INFO  com.example.springtest.business.logging.Log4j2LoggerConfiguration - Entering method: add
+2023-08-13 18:40:03 [http-nio-8080-exec-1] WARN  com.example.springtest.business.logging.Log4j2LoggerConfiguration - Caution! Entering method: add
+2023-08-13 18:41:04 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-13 18:41:06 [main] INFO  com.example.springtest.SpringTestApplication - Starting SpringTestApplication using Java 17.0.8 with PID 38604 (C:\Users\Co\IdeaProjects\SpringCCC\target\classes started by Co in C:\Users\Co\IdeaProjects\SpringCCC)
+2023-08-13 18:41:06 [main] INFO  com.example.springtest.SpringTestApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-13 18:41:07 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-13 18:41:07 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-13 18:41:07 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 83 ms. Found 2 JPA repository interfaces.
+2023-08-13 18:41:07 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-13 18:41:07 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-13 18:41:07 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.springtest.core.IUserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-08-13 18:41:07 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.springtest.dataaccess.ICityCrudRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-08-13 18:41:07 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2023-08-13 18:41:07 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-08-13 18:41:07 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-13 18:41:07 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-13 18:41:07 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-13 18:41:07 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-13 18:41:07 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 823 ms
+2023-08-13 18:41:07 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-13 18:41:07 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-13 18:41:07 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2023-08-13 18:41:07 [main] INFO  org.hibernate.bytecode.internal.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-08-13 18:41:07 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-13 18:41:08 [main] INFO  org.hibernate.bytecode.internal.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-08-13 18:41:08 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-13 18:41:08 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-13 18:41:08 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-13 18:41:08 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6d71f296, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4a15d5f5, org.springframework.security.web.context.SecurityContextHolderFilter@7c35d7d, org.springframework.security.web.header.HeaderWriterFilter@455cb6d9, org.springframework.security.web.authentication.logout.LogoutFilter@64f1b2fb, com.example.springtest.core.security.jwt.JwtAuthenticationFilter@2446be5f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d0538b3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@401b7226, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5319efc0, org.springframework.security.web.session.SessionManagementFilter@6f6998b6, org.springframework.security.web.access.ExceptionTranslationFilter@6e68ccc9, org.springframework.security.web.access.intercept.AuthorizationFilter@20e73e41]
+2023-08-13 18:41:09 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-13 18:41:09 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-13 18:41:09 [main] INFO  com.example.springtest.SpringTestApplication - Started SpringTestApplication in 2.513 seconds (process running for 2.906)
+2023-08-13 18:41:13 [http-nio-8080-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-13 18:41:13 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-13 18:41:13 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-08-13 18:41:14 [http-nio-8080-exec-2] INFO  com.example.springtest.business.logging.Log4j2LoggerConfiguration - Entering method: add
+2023-08-13 18:41:14 [http-nio-8080-exec-2] WARN  com.example.springtest.business.logging.Log4j2LoggerConfiguration - Caution! Entering method: add
+2023-08-13 18:41:25 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-13 18:41:26 [main] INFO  com.example.springtest.SpringTestApplication - Starting SpringTestApplication using Java 17.0.8 with PID 22356 (C:\Users\Co\IdeaProjects\SpringCCC\target\classes started by Co in C:\Users\Co\IdeaProjects\SpringCCC)
+2023-08-13 18:41:26 [main] INFO  com.example.springtest.SpringTestApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-13 18:41:27 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-13 18:41:27 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-13 18:41:27 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 80 ms. Found 2 JPA repository interfaces.
+2023-08-13 18:41:27 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-13 18:41:27 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-13 18:41:27 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.springtest.core.IUserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-08-13 18:41:27 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.springtest.dataaccess.ICityCrudRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-08-13 18:41:27 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-08-13 18:41:27 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-08-13 18:41:27 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-13 18:41:27 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-13 18:41:27 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-13 18:41:27 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-13 18:41:27 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 848 ms
+2023-08-13 18:41:27 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-13 18:41:27 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-13 18:41:27 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2023-08-13 18:41:28 [main] INFO  org.hibernate.bytecode.internal.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-08-13 18:41:28 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-13 18:41:28 [main] INFO  org.hibernate.bytecode.internal.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-08-13 18:41:28 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-13 18:41:28 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-13 18:41:28 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-13 18:41:29 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6d71f296, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4a15d5f5, org.springframework.security.web.context.SecurityContextHolderFilter@7c35d7d, org.springframework.security.web.header.HeaderWriterFilter@455cb6d9, org.springframework.security.web.authentication.logout.LogoutFilter@64f1b2fb, com.example.springtest.core.security.jwt.JwtAuthenticationFilter@2446be5f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d0538b3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@401b7226, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5319efc0, org.springframework.security.web.session.SessionManagementFilter@6f6998b6, org.springframework.security.web.access.ExceptionTranslationFilter@6e68ccc9, org.springframework.security.web.access.intercept.AuthorizationFilter@20e73e41]
+2023-08-13 18:41:29 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-13 18:41:29 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-13 18:41:29 [main] INFO  com.example.springtest.SpringTestApplication - Started SpringTestApplication in 2.582 seconds (process running for 2.971)
+2023-08-13 18:41:47 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-13 18:41:49 [main] INFO  com.example.springtest.SpringTestApplication - Starting SpringTestApplication using Java 17.0.8 with PID 20020 (C:\Users\Co\IdeaProjects\SpringCCC\target\classes started by Co in C:\Users\Co\IdeaProjects\SpringCCC)
+2023-08-13 18:41:49 [main] INFO  com.example.springtest.SpringTestApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-13 18:41:49 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-13 18:41:49 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-13 18:41:49 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 77 ms. Found 2 JPA repository interfaces.
+2023-08-13 18:41:49 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-13 18:41:49 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-13 18:41:49 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.springtest.core.IUserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-08-13 18:41:49 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.springtest.dataaccess.ICityCrudRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-08-13 18:41:49 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2023-08-13 18:41:49 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-08-13 18:41:49 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-13 18:41:49 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-13 18:41:49 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-13 18:41:49 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-13 18:41:49 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 837 ms
+2023-08-13 18:41:50 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-13 18:41:50 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-13 18:41:50 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2023-08-13 18:41:50 [main] INFO  org.hibernate.bytecode.internal.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-08-13 18:41:50 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-13 18:41:50 [main] INFO  org.hibernate.bytecode.internal.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-08-13 18:41:50 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-13 18:41:50 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-13 18:41:51 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-13 18:41:51 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3618486e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52c68925, org.springframework.security.web.context.SecurityContextHolderFilter@26398f67, org.springframework.security.web.header.HeaderWriterFilter@3b9c386d, org.springframework.security.web.authentication.logout.LogoutFilter@7c8cea05, com.example.springtest.core.security.jwt.JwtAuthenticationFilter@2446be5f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@401b7226, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@764d54a0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4ebd0b52, org.springframework.security.web.session.SessionManagementFilter@24ccc91b, org.springframework.security.web.access.ExceptionTranslationFilter@6d7a343f, org.springframework.security.web.access.intercept.AuthorizationFilter@5319efc0]
+2023-08-13 18:41:51 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-13 18:41:51 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-13 18:41:51 [main] INFO  com.example.springtest.SpringTestApplication - Started SpringTestApplication in 2.592 seconds (process running for 2.996)
+2023-08-13 18:42:00 [http-nio-8080-exec-3] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-13 18:42:00 [http-nio-8080-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-13 18:42:00 [http-nio-8080-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-08-13 18:42:01 [http-nio-8080-exec-3] INFO  com.example.springtest.business.logging.Log4j2LoggerConfiguration - Entering method: add
+2023-08-13 18:42:01 [http-nio-8080-exec-3] WARN  com.example.springtest.business.logging.Log4j2LoggerConfiguration - Caution! Entering method: add
+2023-08-13 18:42:07 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-13 18:42:14 [main] INFO  com.example.springtest.SpringTestApplication - Starting SpringTestApplication using Java 17.0.8 with PID 39956 (C:\Users\Co\IdeaProjects\SpringCCC\target\classes started by Co in C:\Users\Co\IdeaProjects\SpringCCC)
+2023-08-13 18:42:14 [main] INFO  com.example.springtest.SpringTestApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-13 18:42:15 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-13 18:42:15 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-13 18:42:15 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 77 ms. Found 2 JPA repository interfaces.
+2023-08-13 18:42:15 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-13 18:42:15 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-13 18:42:15 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.springtest.core.IUserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-08-13 18:42:15 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.springtest.dataaccess.ICityCrudRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-08-13 18:42:15 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2023-08-13 18:42:15 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-08-13 18:42:15 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-13 18:42:15 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-13 18:42:15 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-13 18:42:15 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-13 18:42:15 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 832 ms
+2023-08-13 18:42:15 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-13 18:42:15 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-13 18:42:15 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2023-08-13 18:42:15 [main] INFO  org.hibernate.bytecode.internal.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-08-13 18:42:15 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-13 18:42:16 [main] INFO  org.hibernate.bytecode.internal.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-08-13 18:42:16 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-13 18:42:16 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-13 18:42:16 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-13 18:42:16 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@736eb2a2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7ec5d3e1, org.springframework.security.web.context.SecurityContextHolderFilter@1f67d37f, org.springframework.security.web.header.HeaderWriterFilter@715523b8, org.springframework.security.web.authentication.logout.LogoutFilter@510e0dd2, com.example.springtest.core.security.jwt.JwtAuthenticationFilter@2446be5f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@57fb6900, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@35bb3fea, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b235623, org.springframework.security.web.session.SessionManagementFilter@64641998, org.springframework.security.web.access.ExceptionTranslationFilter@1bf4a79b, org.springframework.security.web.access.intercept.AuthorizationFilter@14aa2123]
+2023-08-13 18:42:17 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-13 18:42:17 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-13 18:42:17 [main] INFO  com.example.springtest.SpringTestApplication - Started SpringTestApplication in 2.548 seconds (process running for 2.944)
+2023-08-13 18:42:24 [http-nio-8080-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-13 18:42:24 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-13 18:42:24 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-08-13 18:42:24 [http-nio-8080-exec-2] INFO  com.example.springtest.business.logging.Slf4jLoggerConfiguration - Entering method: add
+2023-08-13 18:42:24 [http-nio-8080-exec-2] WARN  com.example.springtest.business.logging.Slf4jLoggerConfiguration - Caution! Entering method: add
+2023-08-13 18:43:00 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-13 18:43:01 [main] INFO  com.example.springtest.SpringTestApplication - Starting SpringTestApplication using Java 17.0.8 with PID 9544 (C:\Users\Co\IdeaProjects\SpringCCC\target\classes started by Co in C:\Users\Co\IdeaProjects\SpringCCC)
+2023-08-13 18:43:01 [main] INFO  com.example.springtest.SpringTestApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-13 18:43:01 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-13 18:43:01 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-13 18:43:01 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 81 ms. Found 2 JPA repository interfaces.
+2023-08-13 18:43:01 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-13 18:43:01 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-13 18:43:01 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.springtest.core.IUserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-08-13 18:43:01 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.springtest.dataaccess.ICityCrudRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-08-13 18:43:01 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2023-08-13 18:43:02 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-08-13 18:43:02 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-13 18:43:02 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-13 18:43:02 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-13 18:43:02 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-13 18:43:02 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 841 ms
+2023-08-13 18:43:02 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-13 18:43:02 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-13 18:43:02 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2023-08-13 18:43:02 [main] INFO  org.hibernate.bytecode.internal.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-08-13 18:43:02 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-13 18:43:02 [main] INFO  org.hibernate.bytecode.internal.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-08-13 18:43:03 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-13 18:43:03 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-13 18:43:03 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-13 18:43:03 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@736eb2a2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7ec5d3e1, org.springframework.security.web.context.SecurityContextHolderFilter@1f67d37f, org.springframework.security.web.header.HeaderWriterFilter@715523b8, org.springframework.security.web.authentication.logout.LogoutFilter@510e0dd2, com.example.springtest.core.security.jwt.JwtAuthenticationFilter@2446be5f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@57fb6900, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@35bb3fea, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b235623, org.springframework.security.web.session.SessionManagementFilter@64641998, org.springframework.security.web.access.ExceptionTranslationFilter@1bf4a79b, org.springframework.security.web.access.intercept.AuthorizationFilter@14aa2123]
+2023-08-13 18:43:03 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-13 18:43:03 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-13 18:43:03 [main] INFO  com.example.springtest.SpringTestApplication - Started SpringTestApplication in 2.612 seconds (process running for 3.026)
+2023-08-13 18:43:05 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-13 18:43:05 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-13 18:43:05 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-08-13 18:43:05 [http-nio-8080-exec-1] INFO  com.example.springtest.business.logging.Slf4jLoggerConfiguration - Entering method: add
+2023-08-13 18:43:05 [http-nio-8080-exec-1] WARN  com.example.springtest.business.logging.Slf4jLoggerConfiguration - Caution! Entering method: add
+2023-08-13 18:44:02 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-13 18:44:04 [main] INFO  com.example.springtest.SpringTestApplication - Starting SpringTestApplication using Java 17.0.8 with PID 32796 (C:\Users\Co\IdeaProjects\SpringCCC\target\classes started by Co in C:\Users\Co\IdeaProjects\SpringCCC)
+2023-08-13 18:44:04 [main] INFO  com.example.springtest.SpringTestApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-13 18:44:04 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-13 18:44:04 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-13 18:44:04 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 80 ms. Found 2 JPA repository interfaces.
+2023-08-13 18:44:04 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-13 18:44:04 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-13 18:44:04 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.springtest.core.IUserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-08-13 18:44:04 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.springtest.dataaccess.ICityCrudRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-08-13 18:44:04 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2023-08-13 18:44:05 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-08-13 18:44:05 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-13 18:44:05 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-13 18:44:05 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-13 18:44:05 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-13 18:44:05 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 914 ms
+2023-08-13 18:44:05 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-13 18:44:05 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-13 18:44:05 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2023-08-13 18:44:05 [main] INFO  org.hibernate.bytecode.internal.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-08-13 18:44:05 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-13 18:44:05 [main] INFO  org.hibernate.bytecode.internal.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-08-13 18:44:06 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-13 18:44:06 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-13 18:44:08 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-13 18:44:08 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1d2ce035, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a087c72, org.springframework.security.web.context.SecurityContextHolderFilter@66c91224, org.springframework.security.web.header.HeaderWriterFilter@58c93be3, org.springframework.security.web.authentication.logout.LogoutFilter@330d557e, com.example.springtest.core.security.jwt.JwtAuthenticationFilter@752e4223, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5be8a92c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4bca2a09, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3894d1b1, org.springframework.security.web.session.SessionManagementFilter@14c7ab73, org.springframework.security.web.access.ExceptionTranslationFilter@2fb555e8, org.springframework.security.web.access.intercept.AuthorizationFilter@3e3d8e6c]
+2023-08-13 18:44:08 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-13 18:44:08 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-13 18:44:08 [main] INFO  com.example.springtest.SpringTestApplication - Started SpringTestApplication in 4.721 seconds (process running for 5.191)
+2023-08-13 18:44:47 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-13 18:44:48 [main] INFO  com.example.springtest.SpringTestApplication - Starting SpringTestApplication using Java 17.0.8 with PID 34164 (C:\Users\Co\IdeaProjects\SpringCCC\target\classes started by Co in C:\Users\Co\IdeaProjects\SpringCCC)
+2023-08-13 18:44:48 [main] INFO  com.example.springtest.SpringTestApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-13 18:44:49 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-13 18:44:49 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-13 18:44:49 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 84 ms. Found 2 JPA repository interfaces.
+2023-08-13 18:44:49 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-13 18:44:49 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-13 18:44:49 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.springtest.core.IUserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-08-13 18:44:49 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.springtest.dataaccess.ICityCrudRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-08-13 18:44:49 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2023-08-13 18:44:49 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-08-13 18:44:49 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-13 18:44:49 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-13 18:44:49 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-13 18:44:49 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-13 18:44:49 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 876 ms
+2023-08-13 18:44:49 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-13 18:44:49 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-13 18:44:49 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2023-08-13 18:44:50 [main] INFO  org.hibernate.bytecode.internal.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-08-13 18:44:50 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-13 18:44:50 [main] INFO  org.hibernate.bytecode.internal.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-08-13 18:44:50 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-13 18:44:50 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-13 18:44:51 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-13 18:44:51 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@736eb2a2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7ec5d3e1, org.springframework.security.web.context.SecurityContextHolderFilter@1f67d37f, org.springframework.security.web.header.HeaderWriterFilter@715523b8, org.springframework.security.web.authentication.logout.LogoutFilter@510e0dd2, com.example.springtest.core.security.jwt.JwtAuthenticationFilter@2446be5f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@57fb6900, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@35bb3fea, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b235623, org.springframework.security.web.session.SessionManagementFilter@64641998, org.springframework.security.web.access.ExceptionTranslationFilter@1bf4a79b, org.springframework.security.web.access.intercept.AuthorizationFilter@14aa2123]
+2023-08-13 18:44:51 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-13 18:44:51 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-13 18:44:51 [main] INFO  com.example.springtest.SpringTestApplication - Started SpringTestApplication in 2.717 seconds (process running for 3.158)
+2023-08-13 18:45:59 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-13 18:47:25 [main] INFO  com.example.springtest.SpringTestApplication - Starting SpringTestApplication using Java 17.0.8 with PID 17980 (C:\Users\Co\IdeaProjects\SpringCCC\target\classes started by Co in C:\Users\Co\IdeaProjects\SpringCCC)
+2023-08-13 18:47:25 [main] INFO  com.example.springtest.SpringTestApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-13 18:47:25 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-13 18:47:25 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-13 18:47:25 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 91 ms. Found 2 JPA repository interfaces.
+2023-08-13 18:47:25 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-13 18:47:25 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-13 18:47:25 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.springtest.core.IUserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-08-13 18:47:25 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.springtest.dataaccess.ICityCrudRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-08-13 18:47:25 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2023-08-13 18:47:26 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-08-13 18:47:26 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-13 18:47:26 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-13 18:47:26 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-13 18:47:26 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-13 18:47:26 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 903 ms
+2023-08-13 18:47:26 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-13 18:47:26 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-13 18:47:26 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2023-08-13 18:47:26 [main] INFO  org.hibernate.bytecode.internal.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-08-13 18:47:26 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-13 18:47:26 [main] INFO  org.hibernate.bytecode.internal.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-08-13 18:47:27 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-13 18:47:27 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-13 18:47:27 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-13 18:47:27 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7f82a71f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a0df38e, org.springframework.security.web.context.SecurityContextHolderFilter@51a73873, org.springframework.security.web.header.HeaderWriterFilter@40612056, org.springframework.security.web.authentication.logout.LogoutFilter@4b6942a0, com.example.springtest.core.security.jwt.JwtAuthenticationFilter@2446be5f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5e781b4f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@bafc754, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@64821706, org.springframework.security.web.session.SessionManagementFilter@65a01901, org.springframework.security.web.access.ExceptionTranslationFilter@1503f434, org.springframework.security.web.access.intercept.AuthorizationFilter@3984e2b3]
+2023-08-13 18:47:27 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-13 18:47:27 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-13 18:47:27 [main] INFO  com.example.springtest.SpringTestApplication - Started SpringTestApplication in 2.696 seconds (process running for 3.099)
+2023-08-13 18:47:43 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-13 18:47:45 [main] INFO  com.example.springtest.SpringTestApplication - Starting SpringTestApplication using Java 17.0.8 with PID 36272 (C:\Users\Co\IdeaProjects\SpringCCC\target\classes started by Co in C:\Users\Co\IdeaProjects\SpringCCC)
+2023-08-13 18:47:45 [main] INFO  com.example.springtest.SpringTestApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-13 18:47:46 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-13 18:47:46 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-13 18:47:46 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76 ms. Found 2 JPA repository interfaces.
+2023-08-13 18:47:46 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-13 18:47:46 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-13 18:47:46 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.springtest.core.IUserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-08-13 18:47:46 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.springtest.dataaccess.ICityCrudRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-08-13 18:47:46 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-08-13 18:47:46 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-08-13 18:47:46 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-13 18:47:46 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-13 18:47:46 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-13 18:47:46 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-13 18:47:46 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 822 ms
+2023-08-13 18:47:46 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-13 18:47:46 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-13 18:47:46 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2023-08-13 18:47:46 [main] INFO  org.hibernate.bytecode.internal.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-08-13 18:47:47 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-13 18:47:47 [main] INFO  org.hibernate.bytecode.internal.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-08-13 18:47:47 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-13 18:47:47 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-13 18:47:47 [main] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loggingAspect': Unsatisfied dependency expressed through field 'logger': No qualifying bean of type 'com.example.springtest.core.logging.ILoggerConfiguration' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2023-08-13 18:47:47 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-13 18:47:47 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-13 18:47:47 [main] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-08-13 18:47:47 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field logger in com.example.springtest.core.logging.LoggingAspect required a bean of type 'com.example.springtest.core.logging.ILoggerConfiguration' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.springtest.core.logging.ILoggerConfiguration' in your configuration.
+
+2023-08-13 18:48:27 [main] INFO  com.example.springtest.SpringTestApplication - Starting SpringTestApplication using Java 17.0.8 with PID 14348 (C:\Users\Co\IdeaProjects\SpringCCC\target\classes started by Co in C:\Users\Co\IdeaProjects\SpringCCC)
+2023-08-13 18:48:27 [main] INFO  com.example.springtest.SpringTestApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-13 18:48:28 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-13 18:48:28 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-13 18:48:28 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 88 ms. Found 2 JPA repository interfaces.
+2023-08-13 18:48:28 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-13 18:48:28 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-13 18:48:28 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.springtest.core.IUserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-08-13 18:48:28 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.springtest.dataaccess.ICityCrudRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-08-13 18:48:28 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2023-08-13 18:48:28 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-08-13 18:48:28 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-13 18:48:28 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-13 18:48:28 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-13 18:48:28 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-13 18:48:28 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 882 ms
+2023-08-13 18:48:28 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-13 18:48:28 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-13 18:48:28 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2023-08-13 18:48:28 [main] INFO  org.hibernate.bytecode.internal.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-08-13 18:48:29 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-13 18:48:29 [main] INFO  org.hibernate.bytecode.internal.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-08-13 18:48:29 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-13 18:48:29 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-13 18:48:29 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-13 18:48:30 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3618486e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52c68925, org.springframework.security.web.context.SecurityContextHolderFilter@26398f67, org.springframework.security.web.header.HeaderWriterFilter@3b9c386d, org.springframework.security.web.authentication.logout.LogoutFilter@7c8cea05, com.example.springtest.core.security.jwt.JwtAuthenticationFilter@2446be5f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@401b7226, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@764d54a0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4ebd0b52, org.springframework.security.web.session.SessionManagementFilter@24ccc91b, org.springframework.security.web.access.ExceptionTranslationFilter@6d7a343f, org.springframework.security.web.access.intercept.AuthorizationFilter@5319efc0]
+2023-08-13 18:48:30 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-13 18:48:30 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-13 18:48:30 [main] INFO  com.example.springtest.SpringTestApplication - Started SpringTestApplication in 2.688 seconds (process running for 3.125)
+2023-08-13 18:53:24 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-13 18:53:26 [main] INFO  com.example.springtest.SpringTestApplication - Starting SpringTestApplication using Java 17.0.8 with PID 7260 (C:\Users\Co\IdeaProjects\SpringCCC\target\classes started by Co in C:\Users\Co\IdeaProjects\SpringCCC)
+2023-08-13 18:53:26 [main] INFO  com.example.springtest.SpringTestApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-13 18:53:26 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-13 18:53:26 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-13 18:53:26 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76 ms. Found 2 JPA repository interfaces.
+2023-08-13 18:53:26 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-13 18:53:26 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-13 18:53:26 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.springtest.core.IUserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-08-13 18:53:26 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.springtest.dataaccess.ICityCrudRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-08-13 18:53:26 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2023-08-13 18:53:27 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-08-13 18:53:27 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-13 18:53:27 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-13 18:53:27 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-13 18:53:27 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-13 18:53:27 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 840 ms
+2023-08-13 18:53:27 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-13 18:53:27 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-13 18:53:27 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2023-08-13 18:53:27 [main] INFO  org.hibernate.bytecode.internal.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-08-13 18:53:27 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-13 18:53:27 [main] INFO  org.hibernate.bytecode.internal.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-08-13 18:53:28 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-13 18:53:28 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-13 18:53:28 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-13 18:53:28 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3618486e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52c68925, org.springframework.security.web.context.SecurityContextHolderFilter@26398f67, org.springframework.security.web.header.HeaderWriterFilter@3b9c386d, org.springframework.security.web.authentication.logout.LogoutFilter@7c8cea05, com.example.springtest.core.security.jwt.JwtAuthenticationFilter@2446be5f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@401b7226, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@764d54a0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4ebd0b52, org.springframework.security.web.session.SessionManagementFilter@24ccc91b, org.springframework.security.web.access.ExceptionTranslationFilter@6d7a343f, org.springframework.security.web.access.intercept.AuthorizationFilter@5319efc0]
+2023-08-13 18:53:28 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-13 18:53:28 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-13 18:53:28 [main] INFO  com.example.springtest.SpringTestApplication - Started SpringTestApplication in 2.608 seconds (process running for 3.017)
+2023-08-13 18:53:54 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-13 18:53:56 [main] INFO  com.example.springtest.SpringTestApplication - Starting SpringTestApplication using Java 17.0.8 with PID 33272 (C:\Users\Co\IdeaProjects\SpringCCC\target\classes started by Co in C:\Users\Co\IdeaProjects\SpringCCC)
+2023-08-13 18:53:56 [main] INFO  com.example.springtest.SpringTestApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-13 18:53:56 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-13 18:53:56 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-13 18:53:56 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76 ms. Found 2 JPA repository interfaces.
+2023-08-13 18:53:56 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-13 18:53:56 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-13 18:53:56 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.springtest.core.IUserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-08-13 18:53:56 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.springtest.dataaccess.ICityCrudRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-08-13 18:53:56 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2023-08-13 18:53:56 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-08-13 18:53:56 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-13 18:53:56 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-13 18:53:56 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-13 18:53:56 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-13 18:53:56 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 832 ms
+2023-08-13 18:53:56 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-13 18:53:56 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-13 18:53:56 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2023-08-13 18:53:57 [main] INFO  org.hibernate.bytecode.internal.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-08-13 18:53:57 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-13 18:53:57 [main] INFO  org.hibernate.bytecode.internal.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-08-13 18:53:57 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-13 18:53:57 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-13 18:53:57 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-13 18:53:58 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@159314ca, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@bafc754, org.springframework.security.web.context.SecurityContextHolderFilter@7ec729be, org.springframework.security.web.header.HeaderWriterFilter@7c35d7d, org.springframework.security.web.authentication.logout.LogoutFilter@3618486e, com.example.springtest.core.security.jwt.JwtAuthenticationFilter@2446be5f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@24ea71d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@648bfebe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5e8684a3, org.springframework.security.web.session.SessionManagementFilter@5b7d5eca, org.springframework.security.web.access.ExceptionTranslationFilter@6f6998b6, org.springframework.security.web.access.intercept.AuthorizationFilter@1b89debc]
+2023-08-13 18:53:58 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-13 18:53:58 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-13 18:53:58 [main] INFO  com.example.springtest.SpringTestApplication - Started SpringTestApplication in 2.546 seconds (process running for 2.957)
+2023-08-13 18:54:06 [http-nio-8080-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-13 18:54:06 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-13 18:54:06 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-08-13 18:54:06 [http-nio-8080-exec-2] INFO  com.example.springtest.business.logging.JavaUtilLoggerConfiguration - Entering method: add
+2023-08-13 18:54:06 [http-nio-8080-exec-2] WARN  com.example.springtest.business.logging.JavaUtilLoggerConfiguration - Caution! Entering method: add
+2023-08-13 18:54:43 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-13 18:55:29 [main] INFO  com.example.springtest.SpringTestApplication - Starting SpringTestApplication using Java 17.0.8 with PID 29016 (C:\Users\Co\IdeaProjects\SpringCCC\target\classes started by Co in C:\Users\Co\IdeaProjects\SpringCCC)
+2023-08-13 18:55:29 [main] INFO  com.example.springtest.SpringTestApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-13 18:55:29 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-13 18:55:29 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-13 18:55:29 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 83 ms. Found 2 JPA repository interfaces.
+2023-08-13 18:55:29 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-13 18:55:29 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-13 18:55:29 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.springtest.core.IUserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-08-13 18:55:29 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.springtest.dataaccess.ICityCrudRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-08-13 18:55:29 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2023-08-13 18:55:30 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-08-13 18:55:30 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-13 18:55:30 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-13 18:55:30 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-13 18:55:30 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-13 18:55:30 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 955 ms
+2023-08-13 18:55:30 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-13 18:55:30 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-13 18:55:30 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2023-08-13 18:55:30 [main] INFO  org.hibernate.bytecode.internal.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-08-13 18:55:30 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-13 18:55:30 [main] INFO  org.hibernate.bytecode.internal.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-08-13 18:55:30 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-13 18:55:30 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-13 18:55:31 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-13 18:55:31 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7def62d0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@736eb2a2, org.springframework.security.web.context.SecurityContextHolderFilter@1e9afe4e, org.springframework.security.web.header.HeaderWriterFilter@51e14cb6, org.springframework.security.web.authentication.logout.LogoutFilter@30b075b9, com.example.springtest.core.security.jwt.JwtAuthenticationFilter@752e4223, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b8ba1d2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3984e2b3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7ec5d3e1, org.springframework.security.web.session.SessionManagementFilter@4b6942a0, org.springframework.security.web.access.ExceptionTranslationFilter@57def953, org.springframework.security.web.access.intercept.AuthorizationFilter@66ad7167]
+2023-08-13 18:55:31 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-13 18:55:31 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-13 18:55:31 [main] INFO  com.example.springtest.SpringTestApplication - Started SpringTestApplication in 2.877 seconds (process running for 3.349)
+2023-08-13 18:55:45 [http-nio-8080-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-13 18:55:45 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-13 18:55:45 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-08-13 18:56:03 [http-nio-8080-exec-2] INFO  com.example.springtest.business.logging.JavaUtilLoggerConfiguration - Entering method: add
+2023-08-13 18:56:09 [http-nio-8080-exec-2] WARN  com.example.springtest.business.logging.JavaUtilLoggerConfiguration - Caution! Entering method: add
+2023-08-13 18:58:42 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-13 18:58:45 [main] INFO  com.example.springtest.SpringTestApplication - Starting SpringTestApplication using Java 17.0.8 with PID 16032 (C:\Users\Co\IdeaProjects\SpringCCC\target\classes started by Co in C:\Users\Co\IdeaProjects\SpringCCC)
+2023-08-13 18:58:45 [main] INFO  com.example.springtest.SpringTestApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-13 18:58:45 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-13 18:58:45 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-13 18:58:46 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 82 ms. Found 2 JPA repository interfaces.
+2023-08-13 18:58:46 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-13 18:58:46 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-13 18:58:46 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.springtest.core.IUserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-08-13 18:58:46 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.springtest.dataaccess.ICityCrudRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-08-13 18:58:46 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2023-08-13 18:58:46 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-08-13 18:58:46 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-13 18:58:46 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-13 18:58:46 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-13 18:58:46 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-13 18:58:46 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 872 ms
+2023-08-13 18:58:46 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-13 18:58:46 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-13 18:58:46 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2023-08-13 18:58:46 [main] INFO  org.hibernate.bytecode.internal.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-08-13 18:58:46 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-13 18:58:46 [main] INFO  org.hibernate.bytecode.internal.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-08-13 18:58:47 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-13 18:58:47 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-13 18:58:47 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-13 18:58:47 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7def62d0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@736eb2a2, org.springframework.security.web.context.SecurityContextHolderFilter@1e9afe4e, org.springframework.security.web.header.HeaderWriterFilter@51e14cb6, org.springframework.security.web.authentication.logout.LogoutFilter@30b075b9, com.example.springtest.core.security.jwt.JwtAuthenticationFilter@752e4223, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b8ba1d2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3984e2b3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7ec5d3e1, org.springframework.security.web.session.SessionManagementFilter@4b6942a0, org.springframework.security.web.access.ExceptionTranslationFilter@57def953, org.springframework.security.web.access.intercept.AuthorizationFilter@66ad7167]
+2023-08-13 18:58:48 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-13 18:58:48 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-13 18:58:48 [main] INFO  com.example.springtest.SpringTestApplication - Started SpringTestApplication in 2.769 seconds (process running for 3.254)
+2023-08-13 18:58:52 [http-nio-8080-exec-3] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-13 18:58:52 [http-nio-8080-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-13 18:58:52 [http-nio-8080-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-08-13 18:58:57 [http-nio-8080-exec-3] INFO  com.example.springtest.business.logging.JavaUtilLoggerConfiguration - Entering method: add
+2023-08-13 18:58:58 [http-nio-8080-exec-3] WARN  com.example.springtest.business.logging.JavaUtilLoggerConfiguration - Caution! Entering method: add
+2023-08-13 18:59:02 [http-nio-8080-exec-3] ERROR com.example.springtest.business.logging.JavaUtilLoggerConfiguration - Exception in method: add
+com.example.springtest.core.exceptions.ValidationException: User name cannot be null or empty!
+	at com.example.springtest.business.validation.CityValidator.validate(CityValidator.java:18) ~[classes/:?]
+	at com.example.springtest.business.validation.CityValidator.validate(CityValidator.java:9) ~[classes/:?]
+	at com.example.springtest.core.validation.ValidationAspect.validateWithValidator(ValidationAspect.java:24) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:756) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:756) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.0.11.jar:6.0.11]
+	at com.example.springtest.core.logging.LoggingAspect.logAround(LoggingAspect.java:38) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:756) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:756) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-6.0.11.jar:6.0.11]
+	at com.example.springtest.business.concrete.CityManager$$SpringCGLIB$$0.add(<generated>) ~[classes/:?]
+	at com.example.springtest.rest.CityController.add(CityController.java:27) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.11.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.11.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.2.jar:6.1.2]
+	at com.example.springtest.core.security.jwt.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:61) [classes/:?]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) [spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) [spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2023-08-13 18:59:13 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-13 18:59:15 [main] INFO  com.example.springtest.SpringTestApplication - Starting SpringTestApplication using Java 17.0.8 with PID 33164 (C:\Users\Co\IdeaProjects\SpringCCC\target\classes started by Co in C:\Users\Co\IdeaProjects\SpringCCC)
+2023-08-13 18:59:15 [main] INFO  com.example.springtest.SpringTestApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-13 18:59:15 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-13 18:59:15 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-13 18:59:15 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 84 ms. Found 2 JPA repository interfaces.
+2023-08-13 18:59:15 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-13 18:59:15 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-13 18:59:15 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.springtest.core.IUserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-08-13 18:59:15 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.springtest.dataaccess.ICityCrudRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-08-13 18:59:15 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2023-08-13 18:59:16 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-08-13 18:59:16 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-13 18:59:16 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-13 18:59:16 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-13 18:59:16 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-13 18:59:16 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 863 ms
+2023-08-13 18:59:16 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-13 18:59:16 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-13 18:59:16 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2023-08-13 18:59:16 [main] INFO  org.hibernate.bytecode.internal.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-08-13 18:59:16 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-13 18:59:16 [main] INFO  org.hibernate.bytecode.internal.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-08-13 18:59:16 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-13 18:59:16 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-13 18:59:17 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-13 18:59:17 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@342a5b57, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e781b4f, org.springframework.security.web.context.SecurityContextHolderFilter@78c91d2a, org.springframework.security.web.header.HeaderWriterFilter@29767156, org.springframework.security.web.authentication.logout.LogoutFilter@6d71f296, com.example.springtest.core.security.jwt.JwtAuthenticationFilter@2446be5f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@52a3eba3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24ea71d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1b89debc, org.springframework.security.web.session.SessionManagementFilter@714a4ba2, org.springframework.security.web.access.ExceptionTranslationFilter@71b6edfb, org.springframework.security.web.access.intercept.AuthorizationFilter@77e64a46]
+2023-08-13 18:59:17 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-13 18:59:17 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-13 18:59:17 [main] INFO  com.example.springtest.SpringTestApplication - Started SpringTestApplication in 2.615 seconds (process running for 3.013)
+2023-08-13 18:59:23 [http-nio-8080-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-13 18:59:23 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-13 18:59:23 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-08-13 18:59:23 [http-nio-8080-exec-2] INFO  com.example.springtest.business.logging.JavaUtilLoggerConfiguration - Entering method: add
+2023-08-13 18:59:23 [http-nio-8080-exec-2] WARN  com.example.springtest.business.logging.JavaUtilLoggerConfiguration - Caution! Entering method: add
+2023-08-13 18:59:23 [http-nio-8080-exec-2] ERROR com.example.springtest.business.logging.JavaUtilLoggerConfiguration - Exception in method: add
+com.example.springtest.core.exceptions.ValidationException: User name cannot be null or empty!
+	at com.example.springtest.business.validation.CityValidator.validate(CityValidator.java:18) ~[classes/:?]
+	at com.example.springtest.business.validation.CityValidator.validate(CityValidator.java:9) ~[classes/:?]
+	at com.example.springtest.core.validation.ValidationAspect.validateWithValidator(ValidationAspect.java:24) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:756) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:756) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.0.11.jar:6.0.11]
+	at com.example.springtest.core.logging.LoggingAspect.logAround(LoggingAspect.java:38) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:756) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:756) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-6.0.11.jar:6.0.11]
+	at com.example.springtest.business.concrete.CityManager$$SpringCGLIB$$0.add(<generated>) ~[classes/:?]
+	at com.example.springtest.rest.CityController.add(CityController.java:27) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.11.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.11.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.2.jar:6.1.2]
+	at com.example.springtest.core.security.jwt.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:61) [classes/:?]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) [spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) [spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) [spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
