@@ -19,11 +19,6 @@ public class CaffeineConfiguration implements ICacheConfiguration {
     private final CacheManager cacheManager;
 
     @Override
-    public CacheManager cacheManager() {
-        return this.cacheManager;
-    }
-
-    @Override
     public void clearAllCaches() {
         cacheManager.getCacheNames().forEach(cacheName -> cacheManager.getCache(cacheName).clear());
     }

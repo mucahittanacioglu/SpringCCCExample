@@ -24,7 +24,7 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 @Configuration()
 @ConditionalOnProperty(name = "cache.profile", havingValue = "redis")
-public class RedisConfigurationI implements ICacheConfiguration {
+public class RedisConfiguration implements ICacheConfiguration {
 
     @Value("${redis.host}")
     private String redisHost;
@@ -56,18 +56,9 @@ public class RedisConfigurationI implements ICacheConfiguration {
         template.setKeySerializer(new StringRedisSerializer());
         template.setHashKeySerializer(new StringRedisSerializer());
         template.afterPropertiesSet();
+
         return template;
 
-    }
-
-    @Override
-    public CacheManager cacheManager() {
-        RedisCacheConfiguration config = RedisCacheConfiguration.defaultCacheConfig()
-                .entryTtl(Duration.ofSeconds(ttl));
-
-        return RedisCacheManager.builder(redisConnectionFactory())
-                .cacheDefaults(config)
-                .build();
     }
 
     @Override

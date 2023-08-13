@@ -1,11 +1,7 @@
 package com.example.springtest.core.caching;
 
-import org.springframework.cache.CacheManager;
-
 
 public interface ICacheConfiguration {
-
-    CacheManager cacheManager();
 
     void clearAllCaches();
 

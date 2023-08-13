@@ -1,8 +1,7 @@
 package com.example.springtest.rest;
 
 import com.example.springtest.business.abstracts.ICityService;
-import com.example.springtest.business.validation.CityValidator;
-import com.example.springtest.core.validation.Validate;
+
 import com.example.springtest.entity.City;
 import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
@@ -24,7 +23,6 @@ public class CityController {
     }
 
     @PostMapping("/add")
-    @Validate(CityValidator.class)
     public void add(@RequestBody City city) {
         cityService.add(city);
     }
