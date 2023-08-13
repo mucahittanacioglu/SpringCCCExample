@@ -1,33 +1,22 @@
 package com.example.springtest.business.caching;
 
-import com.example.springtest.core.caching.CacheConfiguration;
+import com.example.springtest.core.caching.ICacheConfiguration;
 import com.github.benmanes.caffeine.cache.Caffeine;
+import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.cache.Cache;
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.caffeine.CaffeineCacheManager;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 import java.util.concurrent.TimeUnit;
 //TODO not working
-@Configuration()
-//@ConditionalOnProperty(name = "cache.profile", havingValue = "caffeine")
-public class CaffeineConfiguration implements CacheConfiguration {
-    @Value("${ttl}")
-    private long ttl;
+@Component
+@ConditionalOnProperty(name = "cache.profile", havingValue = "caffeine")
+public class CaffeineConfiguration implements ICacheConfiguration {
+
     private final CacheManager cacheManager;
-
-    public CaffeineConfiguration() {
-        this.cacheManager = new CaffeineCacheManager();
-
-        // Customize the Caffeine configurations as needed
-        ((CaffeineCacheManager) cacheManager).setCaffeine(Caffeine.newBuilder()
-                .maximumSize(500)
-                .expireAfterAccess(ttl, TimeUnit.SECONDS));
-    }
 
     @Override
     public CacheManager cacheManager() {
@@ -77,4 +66,14 @@ public class CaffeineConfiguration implements CacheConfiguration {
         }
         return null;
     }
+    public CaffeineConfiguration(@Value("${cache.ttl}") long ttl) {
+        this.cacheManager = new CaffeineCacheManager();
+
+        // Customize the Caffeine configurations as needed
+        ((CaffeineCacheManager) cacheManager).setCaffeine(Caffeine.newBuilder()
+                .maximumSize(500)
+                .expireAfterAccess(ttl, TimeUnit.SECONDS));
+    }
+
+
 }

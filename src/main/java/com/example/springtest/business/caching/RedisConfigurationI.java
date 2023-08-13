@@ -1,6 +1,6 @@
 package com.example.springtest.business.caching;
 
-import com.example.springtest.core.caching.CacheConfiguration;
+import com.example.springtest.core.caching.ICacheConfiguration;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -18,22 +18,23 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.cache.CacheManager;
 import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
-import org.springframework.stereotype.Component;
 
 import java.time.Duration;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 @Configuration()
-//@ConditionalOnProperty(name = "cache.profile", havingValue = "redis")
-public class RedisConfiguration implements CacheConfiguration {
+@ConditionalOnProperty(name = "cache.profile", havingValue = "redis")
+public class RedisConfigurationI implements ICacheConfiguration {
 
     @Value("${redis.host}")
     private String redisHost;
 
     @Value("${redis.port}")
     private int redisPort;
-    @Value("${ttl}")
+
+    @Value("${cache.ttl}")
     private long ttl;
+
     //TODO calling bean's function might be problem check.
     @Bean
     public RedisConnectionFactory redisConnectionFactory() {

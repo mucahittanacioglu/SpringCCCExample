@@ -1,10 +1,9 @@
 package com.example.springtest.core.caching;
 
 import org.springframework.cache.CacheManager;
-import org.springframework.stereotype.Component;
 
 
-public interface CacheConfiguration {
+public interface ICacheConfiguration {
 
     CacheManager cacheManager();
 

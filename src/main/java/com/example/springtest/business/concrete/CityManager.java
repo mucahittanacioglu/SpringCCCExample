@@ -32,7 +32,7 @@ public class CityManager implements ICityService {
         return this.cityDal.getAll();
     }
     @Override
-    @RequiredRoles(Role.ADD)
+    @RequiredRoles({Role.ADD})
     public void add(City city) {
         this.cityDal.add(city);
     }

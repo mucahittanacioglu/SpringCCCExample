@@ -18,7 +18,7 @@ import java.lang.reflect.Method;
 public class CachingAspect {
 
     @Autowired
-    private CacheConfiguration cacheConfiguration;
+    private ICacheConfiguration ICacheConfiguration;
 
     @Around("@annotation(cacheable)")
     public Object cacheAroundAdvice(ProceedingJoinPoint joinPoint, Cacheable cacheable) throws Throwable {
@@ -45,22 +45,22 @@ public class CachingAspect {
         switch (cacheable.action()) {
             case READ:
                 // Attempt to get the cached value
-                Object cachedValue = cacheConfiguration.getFromCache(cacheName, key, Object.class);
+                Object cachedValue = ICacheConfiguration.getFromCache(cacheName, key, Object.class);
                 if (cachedValue != null) {
                     return cachedValue;
                 }
 
                 // Otherwise, proceed with the method execution
                 Object result = joinPoint.proceed();
-                cacheConfiguration.addToCache(cacheName, key, result);
+                ICacheConfiguration.addToCache(cacheName, key, result);
                 return result;
             case UPDATE:
                 Object updateResult = joinPoint.proceed();
-                cacheConfiguration.updateCache(cacheName, key, updateResult);
+                ICacheConfiguration.updateCache(cacheName, key, updateResult);
                 return updateResult;
 
             case DELETE:
-                cacheConfiguration.evictCacheByKey(cacheName, key);
+                ICacheConfiguration.evictCacheByKey(cacheName, key);
                 return joinPoint.proceed();
 
             default:
