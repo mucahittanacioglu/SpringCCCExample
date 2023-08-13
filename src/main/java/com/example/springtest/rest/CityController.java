@@ -1,36 +1,31 @@
 package com.example.springtest.rest;
 
-import com.example.springtest.business.validation.CityValidator;
-import com.example.springtest.entity.City;
 import com.example.springtest.business.abstracts.ICityService;
-import jakarta.validation.Valid;
+import com.example.springtest.business.validation.CityValidator;
+import com.example.springtest.core.validation.Validate;
+import com.example.springtest.entity.City;
+import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/city")
+@AllArgsConstructor
+@RequiredArgsConstructor
 public class CityController {
     @Autowired
     private ICityService cityService;
-    @Autowired
-    private CityValidator cityValidator;
-
-    @InitBinder
-    protected void initBinder(WebDataBinder binder){
-        binder.addValidators(cityValidator);
-    }
-
-
     @GetMapping("/cities")
     public List<City> get(){
         return cityService.getAll();
     }
 
     @PostMapping("/add")
-    public void add(@Valid @RequestBody City city) {
+    @Validate(CityValidator.class)
+    public void add(@RequestBody City city) {
         cityService.add(city);
     }
 

@@ -26,6 +26,7 @@ public class AuthManager implements IAuthService {
     private final PasswordEncoder passwordEncoder;
     private final IJwtService jwtService;
     private final AuthenticationManager authenticationManager;
+
     @Override
     public ResponseEntity<String> signIn(UserLoginDto userLoginDto) {
         authenticationManager.authenticate(
@@ -51,8 +52,9 @@ public class AuthManager implements IAuthService {
         userToSave.setName(userRegisterDto.getName());
         userToSave.setEmail(userRegisterDto.getEmail());
         userToSave.setPassword(passwordEncoder.encode(userRegisterDto.getPassword()));
-//        userToSave.setRoles(new HashSet<Role>());
-//        userToSave.addRole(Role.ADD);
+        userToSave.setRoles(new HashSet<Role>());
+       userToSave.addRole(Role.ADD);
+       userToSave.addRole(Role.UPDATE);
 
         userRepository.save(userToSave);
         var jwt = jwtService.generateToken(user);

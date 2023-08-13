@@ -1,4 +1,4 @@
-package com.example.springtest.core.logging;
+package com.example.springtest.core.validation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,6 +7,6 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Log {
-
+public @interface Validate {
+    Class<? extends IValidator<?>> value();
 }

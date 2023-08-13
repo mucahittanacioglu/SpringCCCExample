@@ -10,11 +10,7 @@ import java.util.Set;
 @Entity
 @Table(name = "user")
 @Getter @Setter
-public class User {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int Id;
+public class User extends IEntity {
 
     @Column(name = "name")
     private String name;
@@ -25,16 +21,14 @@ public class User {
     @Column(name = "password")
     private String password;
 
-    @ManyToMany
-    @JoinTable(
-            name = "users_roles",
-            joinColumns = @JoinColumn(name = "user_id"),
-            inverseJoinColumns = @JoinColumn(name = "role_id")
-    )
+    @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
+    @CollectionTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"))
     @Enumerated(EnumType.STRING)
+    @Column(name = "role")
     private Set<Role> roles = new HashSet<>();
 
     public void addRole(Role role) {
+
         this.roles.add(role);
     }
 
