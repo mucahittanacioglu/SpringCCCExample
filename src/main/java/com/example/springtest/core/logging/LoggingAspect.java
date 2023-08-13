@@ -37,7 +37,7 @@ public class LoggingAspect {
         try {
             result = joinPoint.proceed();
         } catch (Exception e) {
-            if(Arrays.stream(logAnnotation.action()).anyMatch(c->c.name().equals(LogAction.ERROR)))
+            if(Arrays.stream(logAnnotation.action()).anyMatch(c->c.equals(LogAction.ERROR)))
                 logger.error("Exception in method: " + method.getName(), e);
             throw e; // Re-throwing the exception to ensure the original flow is maintained
         }
