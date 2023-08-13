@@ -1,16 +1,15 @@
 package com.example.springtest.dataaccess;
 
 import com.example.springtest.entity.City;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 @Repository
 public class CityCrudRepository implements ICityDal{
      @Autowired
-    ICityCrudRepository _crudRepo;
+     ICityCrudRepository _crudRepo;
 
     public CityCrudRepository(ICityCrudRepository _crudRepo) {
         this._crudRepo = _crudRepo;

@@ -1,6 +1,6 @@
 package com.example.springtest.entity;
 
-import com.example.springtest.core.entities.IEntity;
+import com.ts.core.entities.IEntity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
