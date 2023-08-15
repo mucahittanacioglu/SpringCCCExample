@@ -1,19 +1,17 @@
 package com.example.springtest;
 
-import com.ts.core.security.service.TSUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
-import org.springframework.security.core.userdetails.UserDetailsService;
 
 import javax.sql.DataSource;
 
 
 @Configuration
-@ComponentScan("com.ts")
+@ComponentScan("com.example.springtest")
 public class Config {
     @Autowired
     Environment env;
@@ -26,9 +24,5 @@ public class Config {
 //        dataSource.setUsername(env.getProperty("user"));
 //        dataSource.setPassword(env.getProperty("password"));
         return dataSource;
-    }
-    @Bean
-    public UserDetailsService userDetailsService(){
-        return new TSUserDetailsService();
     }
 }

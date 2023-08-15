@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 @Repository
-public class HibernateCityDal implements ICityDal {
+public class HibernateCityDal implements ICityDal  {
 
     private EntityManager entityManager;
 

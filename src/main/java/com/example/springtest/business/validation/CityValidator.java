@@ -1,13 +1,13 @@
 package com.example.springtest.business.validation;
 
-
+import com.example.springtest.core.entities.IEntity;
+import com.example.springtest.core.exceptions.ValidationException;
+import com.example.springtest.core.validation.IValidator;
 import com.example.springtest.entity.City;
-import com.ts.core.exceptions.ValidationException;
-
 import org.springframework.stereotype.Component;
 
 @Component
-public class CityValidator implements com.ts.core.validation.IValidator<City> {
+public class CityValidator implements IValidator<City> {
 
     @Override
     public void validate(City target) throws ValidationException {
@@ -15,7 +15,7 @@ public class CityValidator implements com.ts.core.validation.IValidator<City> {
 
         // Validation code
         if (city.getName() == null || city.getName().length() < 3) {
-            throw new ValidationException("City name cannot be null or less than 3!");
+            throw new ValidationException("User name cannot be null or empty!");
         }
     }
 }

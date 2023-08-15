@@ -2,7 +2,6 @@ package com.example.springtest.business.abstracts;
 
 import com.example.springtest.entity.City;
 
-
 import java.util.List;
 import java.util.Optional;
 

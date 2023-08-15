@@ -1,7 +1,5 @@
 package com.example.springtest.rest;
 
-
-
 import com.example.springtest.business.abstracts.ICityService;
 
 import com.example.springtest.entity.City;

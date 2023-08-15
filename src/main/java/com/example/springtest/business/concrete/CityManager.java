@@ -5,9 +5,9 @@ import com.example.springtest.business.abstracts.ICityService;
 import com.example.springtest.business.validation.CityValidator;
 import com.example.springtest.dataaccess.ICityDal;
 import com.example.springtest.entity.City;
-import com.example.springtest.role.UretimRoles;
 import com.ts.core.caching.CacheAction;
 import com.ts.core.caching.Cacheable;
+import com.ts.core.entities.Role;
 import com.ts.core.logging.Log;
 import com.ts.core.logging.LogAction;
 import com.ts.core.security.RequiredRoles;
@@ -26,14 +26,14 @@ public class CityManager implements ICityService {
     private ICityDal cityDal;
 
     @Override
-    @RequiredRoles({UretimRoles.ADD})
-    @Log(action = {LogAction.ERROR, LogAction.INFO})
+    @RequiredRoles({Role.READ})
     @Cacheable(cacheName = "first",key="ALL_CITIES",action = CacheAction.READ)
+    @Log(action = {LogAction.ERROR, LogAction.INFO})
     public List<City> getAll() {
         return this.cityDal.getAll();
     }
     @Override
-    @RequiredRoles({UretimRoles.ADD})
+    @RequiredRoles({Role.ADD})
     @Validate(CityValidator.class)
     @Log(action = {LogAction.ERROR, LogAction.INFO,LogAction.DEBUG,LogAction.WARNING})
     public void add(City city) {
@@ -50,7 +50,7 @@ public class CityManager implements ICityService {
     }
 
     @Override
-//    @Cacheable(cacheName = "second",keyExpression="#id",action = CacheAction.READ)
+    @Cacheable(cacheName = "second",keyExpression="#id",action = CacheAction.READ)
     public City getById(int id) {
         return this.cityDal.getById(id);
     }
