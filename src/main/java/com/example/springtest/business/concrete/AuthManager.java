@@ -55,10 +55,11 @@ public class AuthManager implements IAuthService {
         userToSave.setEmail(userRegisterDto.getEmail());
         userToSave.setPassword(passwordEncoder.encode(userRegisterDto.getPassword()));
         userToSave.setRoles(new HashSet<Role>());
-        userToSave.addRole(Role.ADD);
-        userToSave.addRole(Role.UPDATE);
+        userToSave.addRole(new Role("ADD"));
+        userToSave.addRole(new Role("UPDATE"));
 
-        userRepository.save(userToSave);
+//        userRepository.save(userToSave);
+        userRepository.saveAndFlush(userToSave);
         var jwt = jwtService.generateToken(user);
         return ResponseEntity.ok().body(jwt);
     }
