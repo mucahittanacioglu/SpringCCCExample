@@ -3,10 +3,10 @@ package com.example.springtest.business.concrete;
 import com.example.springtest.business.abstracts.IAuthService;
 import com.example.springtest.business.dtos.UserLoginDto;
 import com.example.springtest.business.dtos.UserRegisterDto;
-import com.example.springtest.core.IUserRepository;
-import com.example.springtest.core.entities.Role;
-import com.example.springtest.core.entities.User;
-import com.example.springtest.core.security.jwt.IJwtService;
+import com.example.springtest.dataaccess.UserRepository;
+import com.example.springtest.entity.User;
+import com.ts.core.entities.Role;
+import com.ts.core.security.jwt.IJwtService;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -22,7 +22,7 @@ import java.util.HashSet;
 @Service
 @RequiredArgsConstructor
 public class AuthManager implements IAuthService {
-    private final IUserRepository userRepository;
+    private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
     private final IJwtService jwtService;
     private final AuthenticationManager authenticationManager;
@@ -33,6 +33,7 @@ public class AuthManager implements IAuthService {
                 new UsernamePasswordAuthenticationToken(userLoginDto.getEmail(), userLoginDto.getPassword()));
         var tempUser = userRepository.getUserByEmail(userLoginDto.getEmail())
                 .orElseThrow(() -> new IllegalArgumentException("Invalid email or password."));
+
         var user = new org.springframework.security.core.userdetails.User(
                 tempUser.getEmail(), tempUser.getPassword(), new ArrayList<>()
         );
@@ -52,13 +53,11 @@ public class AuthManager implements IAuthService {
         userToSave.setName(userRegisterDto.getName());
         userToSave.setEmail(userRegisterDto.getEmail());
         userToSave.setPassword(passwordEncoder.encode(userRegisterDto.getPassword()));
-        userToSave.setRoles(new HashSet<Role>());
+        userToSave.setRoles(new HashSet<>());
         userToSave.addRole(Role.ADD);
         userToSave.addRole(Role.UPDATE);
 
-
         userRepository.save(userToSave);
-
         var jwt = jwtService.generateToken(user);
         return ResponseEntity.ok().body(jwt);
     }

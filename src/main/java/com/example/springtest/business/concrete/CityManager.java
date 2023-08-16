@@ -2,6 +2,7 @@ package com.example.springtest.business.concrete;
 
 import com.example.springtest.business.abstracts.ICityService;
 
+import com.example.springtest.business.log.logging.CityLoggingConfig;
 import com.example.springtest.business.validation.CityValidator;
 import com.example.springtest.dataaccess.ICityDal;
 import com.example.springtest.entity.City;
@@ -28,14 +29,14 @@ public class CityManager implements ICityService {
     @Override
     @RequiredRoles({Role.READ})
     @Cacheable(cacheName = "first",key="ALL_CITIES",action = CacheAction.READ)
-    @Log(action = {LogAction.ERROR, LogAction.INFO})
+//    @Log(action = {LogAction.ERROR, LogAction.INFO})
     public List<City> getAll() {
         return this.cityDal.getAll();
     }
     @Override
     @RequiredRoles({Role.ADD})
     @Validate(CityValidator.class)
-    @Log(action = {LogAction.ERROR, LogAction.INFO,LogAction.DEBUG,LogAction.WARNING})
+    @Log(log= CityLoggingConfig.class, action = {LogAction.ERROR, LogAction.INFO,LogAction.DEBUG,LogAction.WARNING})
     public void add(City city) {
         this.cityDal.add(city);
     }

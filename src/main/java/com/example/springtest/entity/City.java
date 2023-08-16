@@ -1,6 +1,6 @@
 package com.example.springtest.entity;
 
-import com.example.springtest.core.entities.IEntity;
+import com.ts.core.entities.IEntity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -8,6 +8,7 @@ import lombok.Setter;
 
 import jakarta.persistence.*;
 
+import java.io.Serial;
 import java.io.Serializable;
 
 
@@ -15,6 +16,7 @@ import java.io.Serializable;
 @Table(name="city")
 @Getter @Setter @NoArgsConstructor @AllArgsConstructor
 public class City extends IEntity implements Serializable {
+    @Serial
     private static final long serialVersionUID = 1L;
 
     @Column(name="name")

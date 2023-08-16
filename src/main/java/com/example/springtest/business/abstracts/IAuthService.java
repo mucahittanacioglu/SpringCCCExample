@@ -6,7 +6,7 @@ import org.springframework.http.ResponseEntity;
 
 public interface IAuthService {
 
-    ResponseEntity<String> signIn(UserLoginDto userLoginDto);
+    ResponseEntity<String> signIn(UserLoginDto userLoginDto) throws Throwable;
     ResponseEntity<String> signUp(UserRegisterDto userRegisterDto);
 
 }

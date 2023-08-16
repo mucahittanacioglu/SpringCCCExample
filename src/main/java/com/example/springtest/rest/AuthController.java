@@ -3,7 +3,6 @@ package com.example.springtest.rest;
 import com.example.springtest.business.abstracts.IAuthService;
 import com.example.springtest.business.dtos.UserLoginDto;
 import com.example.springtest.business.dtos.UserRegisterDto;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -21,7 +20,7 @@ public class AuthController {
         return authService.signUp(userRegisterDto);
     }
     @GetMapping("/signIn")
-    public ResponseEntity<String> signUp(@RequestBody UserLoginDto userLoginDto) {
+    public ResponseEntity<String> signUp(@RequestBody UserLoginDto userLoginDto) throws Throwable {
         return authService.signIn(userLoginDto);
     }
 }
